@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1180 360" role="img" aria-labelledby="title desc">
+<title id="title">ValoirTech Primary Logo</title>
+<desc id="desc">ValoirTech logo with glass V icon and red, green, blue, yellow accents.</desc>
+<defs>
+  <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity="0.34"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.11"/><stop offset="1" stop-color="#ffffff" stop-opacity="0.04"/></linearGradient>
+  <linearGradient id="wordTech" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4285F4"/><stop offset="0.36" stop-color="#34A853"/><stop offset="0.68" stop-color="#FBBC05"/><stop offset="1" stop-color="#EA4335"/></linearGradient>
+  <filter id="shadow" x="-35%" y="-35%" width="170%" height="170%"><feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#000" flood-opacity="0.36"/><feDropShadow dx="0" dy="0" stdDeviation="7" flood-color="#4285F4" flood-opacity="0.3"/></filter>
+</defs>
+<rect x="24" y="42" width="270" height="270" rx="70" fill="#07111f"/>
+<rect x="34" y="52" width="250" height="250" rx="62" fill="url(#glass)" stroke="#fff" stroke-opacity="0.28" stroke-width="2"/>
+<path d="M70 210 C111 139 202 120 260 143" fill="none" stroke="#4285F4" stroke-width="10" stroke-linecap="round"/>
+<path d="M260 143 C291 160 279 198 229 224" fill="none" stroke="#34A853" stroke-width="10" stroke-linecap="round"/>
+<path d="M229 224 C158 260 70 245 58 217" fill="none" stroke="#FBBC05" stroke-width="10" stroke-linecap="round"/>
+<path d="M58 217 C50 196 58 174 70 210" fill="none" stroke="#EA4335" stroke-width="10" stroke-linecap="round"/>
+<circle cx="265" cy="143" r="14" fill="#EA4335" stroke="#fff" stroke-opacity="0.5" stroke-width="2"/>
+<g filter="url(#shadow)">
+  <path d="M91 98 L145 243 L170 243 L116 98 Z" fill="#4285F4" stroke="#fff" stroke-opacity="0.35" stroke-width="4"/>
+  <path d="M230 98 L176 243 L151 243 L205 98 Z" fill="#34A853" stroke="#fff" stroke-opacity="0.35" stroke-width="4"/>
+  <path d="M130 195 L160 243 L190 195" fill="none" stroke="#FBBC05" stroke-width="7" stroke-linecap="round"/>
+  <path d="M122 117 L139 163" fill="none" stroke="#EA4335" stroke-width="7" stroke-linecap="round"/>
+</g>
+<text x="355" y="185" font-family="Inter, Arial, sans-serif" font-size="92" font-weight="800" letter-spacing="-4" fill="#ffffff">Valoir</text>
+<text x="656" y="185" font-family="Inter, Arial, sans-serif" font-size="92" font-weight="800" letter-spacing="-4" fill="url(#wordTech)">Tech</text>
+<text x="360" y="237" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="600" letter-spacing="7" fill="#94a3b8">DESIGN • CODE • BUILD</text>
+</svg>
