@@ -148,7 +148,8 @@ button {
 .brand-logo {
     width:3.2rem;
     height:3.2rem;
-    object-fit:cover;
+    object-fit:contain;
+    padding:.08rem;
     border-radius:1rem;
     border:1px solid var(--glass-border);
     background:rgba(255,255,255,.08);
@@ -418,7 +419,7 @@ button {
     aspect-ratio:1/1;
     object-fit:contain;
     border-radius:24px;
-    filter:drop-shadow(0 20px 38px rgba(0,0,0,.48));
+    filter:drop-shadow(0 20px 38px rgba(0,0,0,.48)) saturate(1.08);
     animation:floatLogo 5s ease-in-out infinite
 }
 .logo-scan {

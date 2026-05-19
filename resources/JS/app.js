@@ -22,6 +22,25 @@ navLinks.forEach((link) => {
     });
 });
 
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && navPanel?.classList.contains('open')) {
+        navPanel.classList.remove('open');
+        menuToggle?.setAttribute('aria-expanded', 'false');
+        menuToggle?.focus();
+    }
+});
+
+document.addEventListener('click', (event) => {
+    const target = event.target;
+    if (!navPanel || !menuToggle || !(target instanceof Element)) return;
+    const clickedInsideMenu = navPanel.contains(target) || menuToggle.contains(target);
+    if (!clickedInsideMenu && navPanel.classList.contains('open')) {
+        navPanel.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+    }
+});
+
+
 filterButtons.forEach((button) => {
     button.addEventListener('click', () => {
         const filter = button.dataset.filter;
@@ -34,6 +53,7 @@ filterButtons.forEach((button) => {
         projectCards.forEach((card) => {
             const shouldShow = filter === 'all' || card.dataset.category === filter;
             card.style.display = shouldShow ? 'grid' : 'none';
+            card.setAttribute('aria-hidden', String(!shouldShow));
         });
     });
 });
