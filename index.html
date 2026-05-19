@@ -7,27 +7,34 @@
         Pierre Telfort | ValoirTech Portfolio
     </title>
     <meta content="Pierre Telfort is an iOS and full-stack developer building polished mobile and web products under the ValoirTech brand." name="description"/>
-    <meta content="#0b1020" name="theme-color"/>
+    <meta content="#f3f4f6" media="(prefers-color-scheme: light)" name="theme-color"/>
+    <meta content="#0b1020" media="(prefers-color-scheme: dark)" name="theme-color"/>
     <meta content="Pierre Telfort | ValoirTech Portfolio" property="og:title"/>
     <meta content="A modern portfolio showcasing iOS apps, web projects, technical skills, and product-focused design." property="og:description"/>
     <meta content="website" property="og:type"/>
     <link href="https://fonts.googleapis.com" rel="preconnect"/>
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-    <!--   Add icon link     -->
-    <link href="/resources/logo/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png"/>
-    <link href="/resources/logo/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png"/>
-    <link href="/resources/logo/favicon.ico" rel="shortcut icon"/>
-    <link href="/resources/logo/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
-    <link href="/resources/logo/site.webmanifest" rel="manifest"/>
-    <!--   Stylesheet    -->
+    <!--   ValoirTech logo / favicon package     -->
+<link href="./resources/logo/favicon-light-32x32.png" media="(prefers-color-scheme: light)" rel="icon" sizes="32x32" type="image/png"/>
+<link href="./resources/logo/favicon-dark-32x32.png" media="(prefers-color-scheme: dark)" rel="icon" sizes="32x32" type="image/png"/>
+<link href="./resources/logo/favicon-light-16x16.png" media="(prefers-color-scheme: light)" rel="icon" sizes="16x16" type="image/png"/>
+<link href="./resources/logo/favicon-dark-16x16.png" media="(prefers-color-scheme: dark)" rel="icon" sizes="16x16" type="image/png"/>
+<link href="./resources/logo/favicon.ico" rel="shortcut icon"/>
+<link href="./resources/logo/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="./resources/logo/site.webmanifest" rel="manifest"/>
+<!--   Stylesheet    -->
     <link href="./resources/css/style.css" rel="stylesheet"/>
 </head>
 <body>
 <header class="site-header">
     <div class="container site-nav">
         <a aria-label="ValoirTech home" class="brand" href="#home">
-            <img alt="ValoirTech icon" class="brand-logo" src="/resources/logo/favicon-128x128.png"/>
+            <picture class="brand-logo-frame">
+    <source media="(prefers-color-scheme: light)" srcset="./resources/logo/valoirtech-icon-light-512.png"/>
+    <source media="(prefers-color-scheme: dark)" srcset="./resources/logo/valoirtech-icon-dark-512.png"/>
+    <img alt="ValoirTech icon" class="brand-logo" src="./resources/logo/valoirtech-icon-dark-512.png"/>
+</picture>
             <span class="brand-text">
       Valoir
       <span>
@@ -134,7 +141,11 @@
             </div>
             <div class="hero-panel fade-in logo-tilt-card" id="logoTiltCard">
                 <div class="hero-logo-wrap">
-                    <img alt="ValoirTech primary logo" class="hero-logo" src="/resources/logo/valoirtech-logo-primary.svg"/>
+                    <picture class="hero-logo-frame">
+    <source media="(prefers-color-scheme: light)" srcset="./resources/logo/valoirtech-logo-primary-light.png"/>
+    <source media="(prefers-color-scheme: dark)" srcset="./resources/logo/valoirtech-logo-primary-dark.png"/>
+    <img alt="ValoirTech primary logo" class="hero-logo" src="./resources/logo/valoirtech-logo-primary-dark.png"/>
+</picture>
                     <div class="logo-scan">
                     </div>
                 </div>
