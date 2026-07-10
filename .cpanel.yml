@@ -1,7 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/valodmmk/public_html/
+    - export DEPLOYPATH=/home/valoyddi/public_html/
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp -R resources $DEPLOYPATH
     - /bin/cp Terms.html $DEPLOYPATH
